@@ -12,7 +12,7 @@
 			contenido = document.createTextNode(tarea);
 
 		if (tarea === "") {
-			empleoInput.setAttribute("placeholder", "Agrega una tarea valida");
+			empleoInput.setAttribute("placeholder", "Agrega un empleo valido");
 			empleoInput.className = "error";
 			return false;
 		}
@@ -35,9 +35,11 @@
 		}
 
 	};
+
+
 	var comprobarInput = function(){
 		empleoInput.className = "";
-		teareaInput.setAttribute("placeholder", "Agrega tu tarea");
+		tareaInput.setAttribute("placeholder", "Agrega tu empleo");
 	};
 
 	var eleminarTarea = function(){
@@ -56,4 +58,30 @@
 	for (var i = 0; i <= lista.children.length -1; i++) {
 		lista.children[i].addEventListener("click", eleminarTarea);
 	}
-}());
+
+
+
+
+	 var mostrar_lista = function (){
+	 	var array = document.getElementById("lista");
+	 	console.log(array);
+
+	 	for (var i = 0; i < array.children.length; i++){
+	 	console.log(array[i]);
+	 		document.write (array[i] + "</br>")
+	 	}
+	 	show_empleos.addEventListener("click",mostrar_lista);
+		
+
+		 {
+		 	lista.children[i].addEventListener("click", function(){
+		 		this.parentNode.removeChild(this);
+		 	});
+	 	}
+		console.log(i);
+	 };
+
+		mostrar_lista();
+		document.write(lista.lastChild;
+
+}())

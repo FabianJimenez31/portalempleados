@@ -6,6 +6,33 @@
 	box-sizing: border-box;
 }
 
+#header{
+	margin: auto;
+	width: 200px;
+	font-family: arial, helvetica, sans-serif;
+
+}
+.nav li a {
+
+background-color: #212121;
+color:white;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
+
+}
+
+
+}
+
+.nav li a{
+	background color: #434343;
+}
+.nav li ul{
+	display: none;
+	position: absolute;;
+	min-width: 140px;
+}
 body {
 	background: #FAFAFA;
 	font-family: arial, helvetica, sans-serif;
@@ -51,17 +78,31 @@ body {
 	padding: 15px;
 }
 
-.principal .formulario .boton:hover {
+.mostrar_empleos .formulario .boton {
+	background: black;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+	margin: auto;
+	width: auto;
+}
+
+
+.principal .formulario.boton:hover {
 	border: 1px solid #fff;
 }
 
 /* - Empleos - */
 .empleos .lista {
 	list-style: none;
+	text-decoration:bold;
 }
 
 .empleos .lista li {
 	border-bottom: 1px solid #B6B6B6;
+
 }
 
 .empleos .lista li a {
